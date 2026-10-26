@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_complete_project/core/di/dependency_injection.dart';
-import 'package:flutter_complete_project/core/routing/app_router.dart';
 import 'package:flutter_complete_project/doc_app.dart';
 
-void main() {
-  setUpGetIt();
-  runApp(DocApp(appRouter: AppRouter()));
+
+import 'core/routing/app_router.dart';
+
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  setupGetIt();
+  runApp(DocApp(
+    appRouter: AppRouter(),
+  ));
 }
+

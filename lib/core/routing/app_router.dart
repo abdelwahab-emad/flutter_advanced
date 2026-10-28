@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_complete_project/core/routing/routes.dart';
+import 'package:flutter_complete_project/features/home/ui/home_screen.dart';
 
 import 'package:flutter_complete_project/features/login/logic/cubit/login_cubit.dart';
 import 'package:flutter_complete_project/features/login/ui/login_screen.dart';
@@ -31,7 +32,8 @@ class AppRouter {
             child: const SignupScreen(),
           ),
         );
-
+      case Routes.homeScreen:
+        return MaterialPageRoute(builder: (_) => HomeScreen());
       default:
         return null;
     }

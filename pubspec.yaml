@@ -1,3 +1,4 @@
+
 name: flutter_complete_project
 description: "A new Flutter project."
 publish_to: 'none'
@@ -5,7 +6,7 @@ publish_to: 'none'
 version: 1.0.2+1
 
 environment:
-  sdk: ^3.11.3
+  sdk: '>=3.0.0 <4.0.0'
 
 dependencies:
   flutter:
